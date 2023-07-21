@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/login.css">
+  <link rel="shortcut icon" href="./src/assets/svlogo.png" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/d604029ef5.js" crossorigin="anonymous"></script>
+  <title>SVLABS | Tela de Login</title>
+</head>
+<body>
+  <div id="login-form-wrap">
+    <h2>Login</h2>
+    <form id="login-form">
+      <p>
+        <input type="text" id="email" name="email" placeholder="Email"><i class="validation"></i>
+      </p>
+      <p>
+        <input type="password" id="senha" name="senha" placeholder="Senha"><i class="validation"></i>
+      </p>
+      <p>
+        <input type="button" id="btn-entrar" value="Login">
+      </p>
+    </form>
+    <div id="create-account-wrap">
+      <p>Não está cadastrado?<b> Fale com seu Gestor</b></p>
+    </div>
+  </div>
+  <div class="login-data">
+    <p><b>Email: </b>admin@svlabs.com.br</p>
+    <p><b>Senha: </b>Svlabs@2023</p>
+  </div>
+  <a href="https://blog.svlabs.com.br/" target="_blank">
+    <img src="./src/assets/svlogo.png" alt="SVLABS LOGO" id="svlabs">
+  </a>
+  <div id="toast">
+    <div class="toast-content">
+      <i class="fa-sharp fa-solid fa-info info"></i>
+      <div class="message">
+        <div class="text text-1">Erro</div>
+        <div class="text text-2">E-mail ou senha inválidos</div>
+      </div>
+    </div>
+    <i class="fa-solid fa-xmark xmark"></i>
+    <div class="progress"></div>
+  </div>
+  <script src="./src/js/credenciais.js"></script>
+  <script src="./src/js/login.js"></script>
+</body>
+</html>

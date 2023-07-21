@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d604029ef5.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./src/assets/svlogo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./src/css/register.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+  <script src="./src/js/register.js" defer></script>
+  <title>SVLabs | Formulário de Registro</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="https://blog.svlabs.com.br/" target="_blank">
+        <img src="./src/assets/svlogo.png" alt="SVLABS LOGO" id="svlabs">
+      </a>
+      <h1>SVLABS.</h1>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="login.html" target="_self">Login</a>
+        </li>
+        <li>
+          <a href="colaboradores.html" target="_self">Cadastro</a>
+        </li>
+        <li class="dropdown">
+          <a target="_self">Serviços</a>
+
+          <div class="dropdown-menu">
+            <a href="calculator.html">Calculadora</a>
+            <a href="todolist.html">ToDo List</a>
+            <a href="autocomplete.html">AutoComplete</a>
+            <a href="">ChatBot</a>
+          </div>
+        </li>
+        <li>
+          <a target="_self" class="active">Formulário de registro</a>
+        </li>
+        <li>
+          <a href="">SvLabs Shop</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="start-page">
+    <div class="left-side">
+      <i class="fa-sharp fa-solid fa-house"></i>
+      <span class="text-1">Home ></span>
+      <span class="text-2">Formulário de Registro</span>
+    </div>
+    <div class="right-side">
+    </div>
+  </div>
+  <hr>
+
+
+  <div class="container">
+    <header>Formulário de Registro</header>
+    <hr id="bar">
+    <form action="https://api.sheetmonkey.io/form/jk6MqkYVFL8YfWezUh4fgv" method="post">
+      <div class="form first">
+        <div class="details personal">
+          <span class="title">Informações pessoais</span>
+          <div class="fields">
+            <div class="input-field">
+              <label for="Nome">Nome Completo</label>
+              <input id="Nome" name="Nome" type="text" placeholder="Insira seu nome" required>
+            </div>
+            <div class="input-field">
+              <label for="datanasc">Data de Nascimento</label>
+              <input id="datanasc" name="Data Nascimento" type="text" placeholder="01/01/1999" required>
+            </div>
+            <div class="input-field">
+              <label for="email">E-mail</label>
+              <input id="email" name="E-mail" type="text" placeholder="email@svlabs.com.br" required>
+            </div>
+            <div class="input-field">
+              <label for="tel">Telefone</label>
+              <input type="tel" name="Telefone" id="tel" placeholder="(xx) xxxx-xxxx" autocomplete="off" maxlength="11" required>
+            </div>
+            <div class="input-field">
+              <label for="cpf">CPF</label>
+              <input id="cpf" name="CPF" type="text" placeholder="000.000.000-00" required>
+            </div>
+            <div class="input-field">
+              <label for="rg">RG</label>
+              <input id="rg" name="RG" type="text" placeholder="000.000.000-00" required>
+            </div>            
+            <div class="input-field">
+              <label for="gender">Gênero</label>
+              <select name="Gênero" id="gender">
+                <option disabled selected>Selecione seu gênero</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outros">Prefiro não dizer</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label for="end">Endereço</label>
+              <input id="end" name="Endereço" placeholder="Rua Tal, Bairro não sei N° 000 - Cidade, Estado" required>
+            </div>
+            <div class="input-field">
+              <label>Escolaridade</label>
+              <select name="Escolaridade">
+                <option disabled selected>Selecione sua Escolaridade</option>
+                <option value="Ensino fundamental">Ensino Fundamental</option>
+                <option value="Ensino médio">Ensino Médio</option>
+                <option value="Graduação">Graduação</option>
+                <option value="Pos graduação">Pós-graduação</option>
+                <option value="Mestrado">Mestrado</option>
+                <option value="Doutorado">Doutorado</option>
+                <option value="Técnico">Curso Técnico</option>
+                <option value="Tecnólogo">Tecnólogo</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="details ID">
+          <span class="title">Informações profissionais</span>
+          <div class="fields">
+            <div class="input-field">
+              <label for="company">Empresa </label>
+              <input id="company" name="Empresa" type="text" placeholder="Insira o nome da sua empresa" >
+            </div>
+            <div class="input-field">
+              <label for="role">Cargo</label>
+              <input id="role" name="Cargo" type="text" placeholder="Insira seu Cargo" >
+            </div>
+            <div class="input-field">
+              <label>Senioridade</label>
+              <select >
+                <option disabled selected>Selecione sua senioridade</option>
+                <option value="Estagiário">Estagiário</option>
+                <option value="Trainee">Trainee</option>
+                <option value="Junior">Junior</option>
+                <option value="Pleno">Pleno</option>
+                <option value="Senior">Senior</option>
+                <option value="Especialista">Especialista</option>
+              </select>
+            </div>
+            <div class="input-field">
+              <label for="departament">Setor/Departamento</label>
+              <input id="departament" name="Setor/Departamento" type="text" placeholder="Insira seu departamento" >
+            </div>
+            <div class="input-field">
+              <label for="salario">Valor médio salario</label>
+              <input name="Salário médio" id="salario" type="tel" placeholder="R$12.000,00" >
+            </div>
+            <div class="input-field">
+              <label for="dataadm">Data de admissão</label>
+              <input name="Data de admissão" id="dataadm" type="text" placeholder="01/01/1999" >
+            </div>
+            <div class="big-field">
+              <label for="activities">Responsabilidades</label>
+              <textarea id="activities" name="Atividades atuais" placeholder="Descreva suas atividades atuais" ></textarea>
+            </div>
+          </div>          
+        </div>
+
+        <div class="details academic">
+          <span class="title">Informações acadêmicas</span>
+          <div class="fields">
+            <div class="input-field">
+              <label for="college">Instituição</label>
+              <input id="college" name="Instituição" type="text" placeholder="Insira o nome da sua instituição" >
+            </div>
+            <div class="input-field">
+              <label for="course">Curso</label>
+              <input id="course" type="text" name="Curso" placeholder="Digite o curso">
+            </div>
+            <div class="input-field">
+              <label for="languages">Idiomas</label>
+              <input id="languages" name="Idiomas" type="text" placeholder="Insira seus idiomas" >
+            </div>            
+            <div class="input-field">
+              <label for="certifications">Certificações</label>
+              <input id="certifications" type="text" name="Certificações" placeholder="Digite suas certificações">
+            </div>
+            <div class="input-field">
+              <label for="dataini">Data de ínicio</label>
+              <input id="dataini" name="Data de ínicio" type="text" placeholder="01/01/1999" >
+            </div>
+            <div class="input-field">
+              <label>Conclusão</label>
+              <select>
+                <option disabled selected>Selecione o período de conclusão</option>
+                <option value="06/2024">06/2024</option>
+                <option value="12/2024">12/2024</option>
+                <option value="06/2025">06/2025</option>
+                <option value="12/2025">12/2025</option>
+                <option value="06/2026">06/2026</option>
+                <option value="12/2026">12/2026</option>
+                <option value="06/2027">06/2027</option>
+                <option value="12/2027">12/2027</option>
+                <option value="06/2028">06/2028</option>
+                <option value="12/2028">12/2028</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+            <div class="big-field">
+              <label for="activities-acad">Atividades Extras</label>
+              <textarea id="activities-acad" name="Atividades extras" placeholder="Descreva suas atividades extracurriculares" ></textarea>
+            </div>
+          </div>
+          <input id="submit-btn" class="nextBtn" type="submit"></input>
+        </div>
+      </div>
+      <input id="submit-btn" class="nextBtn" type="submit"></input>
+    </form>
+  </div>
+</body>
+
+</html>

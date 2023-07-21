@@ -1,0 +1,205 @@
+/* .form-login {
+    width: 400px;
+    margin: auto;
+    margin-top: 60px;
+}*/
+
+.login-data {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: .5;
+    font-size: medium;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #2b3e51;
+    overflow: hidden;
+}
+
+h2 {
+    font-weight: 300;
+    text-align: center;
+}
+
+#login-form-wrap {
+    background-color: #fff;
+    width: 35%;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px 0 0 0;
+    border-radius: 4px;
+    box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+#login-form {
+    padding: 0 60px;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0 0 0 10px;
+    margin: 0;
+    color: #505050;
+    border: 1px solid #c2c0ca;
+    font-style: normal;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    display: inline-block;
+    background: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #f7b911;
+}
+
+#btn-entrar {
+    border: none;
+    display: block;
+    background-color: #ffbb00;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+#btn-entrar:hover {
+    background-color: #c48f00;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#create-account-wrap {
+    background-color: #eeedf1;
+    color: #8a8b8e;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0 0 4px 4px;
+}
+
+#toast {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    border-left: 6px solid #fa3030;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: .5s;
+}
+
+#toast.active {
+    transform: translateX(0%);
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    color: #ff0000;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.text {
+    font-size: .75em;
+    font-weight: 400;
+    color: #666;
+}
+
+.text-1 {
+    font-weight: 600;
+    color: #333;
+}
+
+.xmark {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: .7;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.xmark:hover {
+    opacity: 1;
+}
+
+.progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+
+.progress.active:before {
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100% {
+        right: 100%;
+    }
+}
+
+.progress:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fa3030;
+}
+
+#svlabs {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    height: 125px;
+}

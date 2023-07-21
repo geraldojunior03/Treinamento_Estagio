@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type='text/javascript' src="./src/js/colaboradores.js"></script>
+    <link rel="stylesheet" href="./src/css/colaboradores.css">
+    <link rel="shortcut icon" href="./src/assets/svlogo.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/d604029ef5.js" crossorigin="anonymous"></script>
+    <title>SVLABS | Cadastro de colaboradores</title>
+</head>
+<body page='lista'>
+    <nav>
+        <div class="logo">
+            <a href="https://blog.svlabs.com.br/" target="_blank">
+                <img src="./src/assets/svlogo.png" alt="SVLABS LOGO" id="svlabs">
+            </a>
+            <h1>SVLABS.</h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="login.html" target="_self">Login</a>
+                </li>
+                <li>
+                    <a target="_self" class="active">Cadastro</a>
+                </li>
+                <li class="dropdown">
+                    <a target="_self">Serviços</a>
+
+                    <div class="dropdown-menu">
+                        <a href="calculator.html">Calculadora</a>
+                        <a href="todolist.html">ToDo List</a>
+                        <a href="autocomplete.html">AutoComplete</a>
+                        <a href="">ChatBot</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="register.html" target="_self">Formulário de registro</a>
+                </li>
+                <li>
+                    <a href="">SvLabs Shop</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="start-page">
+        <div class="left-side">
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <span class="text-1">Home ></span>
+            <span class="text-2">Cadastro de Colaboradores</span>
+        </div>
+        <div class="right-side">
+        </div>
+    </div>
+    <hr>
+    <div class="cadastro">
+        <div class="left-side">
+            <button onclick="vizualizar('cadastro', true)">Novo usuário</button>
+        </div>
+        <div class="right-side">
+            <input type="text" placeholder="Pesquisar" id='inputPesquisa' />
+        </div>
+    </div>
+    <div id='listaRegistros'>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                    <th>Data Nasc</th>
+                </tr>
+            </thead>
+            <tbody id='listaRegistrosBody'></tbody>
+        </table>
+    </div>
+    <div class="form-container">
+        <form id='cadastroRegistro'>
+            <div class="input-group">
+                <div class='label' style="display: none;">
+                    <div>ID</div>
+                    <div>
+                        <input type='number' readonly id='id' />
+                    </div>
+                </div>
+                <div class='label'>
+                    <div>Nome</div>
+                    <div>
+                        <input id='nome' required />
+                    </div>
+                </div>
+                <div class='label'>
+                    <div>Endereço</div>
+                    <div>
+                        <input type='text' id='end' required />
+                    </div>
+                </div>
+                <div class='label'>
+                    <div>Data Nascimento</div>
+                    <div>
+                        <input type='date' id='datanasc' required/>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button>Salvar</button>
+                <button onclick="vizualizar('lista')" class="cinza" type='button'>Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

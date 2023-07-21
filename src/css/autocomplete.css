@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.start-page {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 50px 30px 50px;
+  color: #666;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.text-2 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.right-side button {
+  color: #999;
+  border: 1px solid #999;
+  background: #fff;
+  font-weight: 700;
+}
+
+nav {
+  background-color: #ffbb00;
+  z-index: 100;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+#svlabs {
+  height: 50px;
+}
+
+.logo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav li a.active {
+  background-color: #c48f00;
+  cursor: default;
+}
+
+nav li a:hover {
+  background-color: #c48f00;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: white;
+  background-color: #ffbb00;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover {
+  background-color: #c48f00;
+}
+
+form {
+  width: 30vw;
+  height: 100%;
+  margin: 150px auto;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: #303030;
+  width: 100%;
+  background-color: transparent;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+  text-transform: capitalize;
+}
+
+input[type="text"]::placeholder {
+  text-transform: initial;
+}
+
+ul {
+  list-style: none;
+  z-index: 2;
+}
+
+.list {
+  width: 100%;
+  height: 250px;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+}
+
+.list::-webkit-scrollbar {
+  width: 5px;
+  width: 5px;
+  background: #00000000;
+}
+
+.list::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+.list::-webkit-scrollbar-thumb  {
+  background: #ffbb00;
+  border-radius: 15px;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+  background: #c48f00;
+}
+
+.list-items {
+  padding: 10px 5px;
+}
+
+.list-items:hover {
+  background-color: #dddddd;
+}
+
+#city {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+#second-text {
+  font-weight: 700;
+  color: #222;
+}

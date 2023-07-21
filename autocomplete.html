@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/autocomplete.css" />
+  <script src="./src/js/autocomplete.js" defer></script>
+  <link rel="shortcut icon" href="./src/assets/svlogo.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d604029ef5.js" crossorigin="anonymous"></script>
+  <title>SVLABS | AutoComplete</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="https://blog.svlabs.com.br/" target="_blank">
+        <img src="./src/assets/svlogo.png" alt="SVLABS LOGO" id="svlabs">
+      </a>
+      <h1>SVLABS.</h1>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="login.html" target="_self">Login</a>
+        </li>
+        <li>
+          <a href="colaboradores.html" target="_self">Cadastro</a>
+        </li>
+        <li class="dropdown">
+          <a target="_self">Serviços</a>
+
+          <div class="dropdown-menu">
+            <a href="calculator.html">Calculadora</a>
+            <a href="todolist.html">ToDo List</a>
+            <a target="_self" class="active">AutoComplete</a>
+            <a href="">ChatBot</a>
+          </div>
+        </li>
+        <li>
+          <a href="register.html" target="_self" >Formulário de registro</a>
+        </li>
+        <li>
+          <a href="">SvLabs Shop</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="start-page">
+    <div class="left-side">
+      <i class="fa-sharp fa-solid fa-house"></i>
+      <span class="text-1">Serviços ></span>
+      <span class="text-2">AutoComplete</span>
+    </div>
+    <div class="right-side">
+    </div>
+  </div>
+  <hr>
+  <form autocomplete="off">
+    <h1>Lista de Cidades do Brasil</h1>
+    <div class="input-wrapper">
+      <input id="input" type="text" placeholder="Pesquise um estado">
+    </div>
+    <div id="city">
+      <p id="first-text"></p>
+      <p id="second-text"></p>
+    </div>
+    <ul class="list"></ul>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
