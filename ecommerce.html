@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce WebSite With Payment</title>
+  <!-- Link to Css -->
+  <link rel="stylesheet" href="./src/css/ecommerce.css">
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <div class="nav container">
+      <div class="logo-container">
+        <a href="colaboradores.html" target="_self" class="home"><i class='bx bx-home-alt-2'></i></a>
+        <a href="#" class="logo">Ecommerce - SVLabs</a>
+      </div>
+      <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+      <div class="cart">
+        <h2 class="cart-title">Carrinho</h2>
+        <div class="cart-content">
+        </div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">Pagar Agora</button>
+        <i class="bx bx-x" id="close-cart"></i>
+      </div>
+    </div>
+    <div class="line"></div>
+  </header>
+  <section class="shop container">
+    <h2 class="section-title">Produtos - SV Shop</h2>
+    <div class="shop-content">
+      <div class="product-box">
+        <img 
+          src="./src/img/base-para-notebook-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">Base para Notebook com cooler e Led</h2>
+        <span class="price">$V240</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <div class="product-box">
+        <img 
+          src="./src/img/vale-compras-centauro-50-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">Vale compras Centauro - R$ 50</h2>
+        <span class="price">$V160</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <div class="product-box">
+        <img 
+          src="https://blogger.googleusercontent.com/img/a/AVvXsEhAh-KC4ASMVk_-LrUq6EYnuqdkItIfW80E-yfYYXKGX3cNoJjEPVi8O4aQAiGpa6qs8mWA6Im9ASHvXjwbcZAHfe_mWbtHY3PK1dsVyPE8an_FrgsaBTp07F3aTa4QgbYYZKU7OZIIQzixE7Q4AT4W5wkiAteatFAcUXN6P1GaglgABCJ4uuLcIF38ORom"  
+          class="product-img"
+        >
+        <h2 class="product-title">Teclado Gamer Redragon Branco</h2>
+        <span class="price">$V800</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <div class="product-box">
+        <img 
+          src="./src/img/mouse-pad-minha-maquina-1-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">Mouse Pad Ergonômico Na Minha Máquina Funciona</h2>
+        <span class="price">$V115</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <div class="product-box">
+        <img 
+          src="./src/img/voucher-experiencia-cavalgada-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">Cavalgada no recanto das cachoeiras</h2>
+        <span class="price">$V530</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <div class="product-box">
+        <img 
+          src="./src/img/vale-compras-centauro-100-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">VALE COMPRAS CENTAURO - R$ 100</h2>
+        <span class="price">$V320</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>      
+      <div class="product-box">
+        <img 
+          src="./src/img/copo-personalizavel-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">Copo personalizável</h2>
+        <span class="price">$V95</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <div class="product-box">
+        <img 
+          src="./src/img/camisa-polo-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">Camisa Polo Feminina</h2>
+        <span class="price">$V120</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <div class="product-box">
+        <img 
+          src="./src/img/Copo-Stanley-3-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">Copo Stanley original</h2>
+        <span class="price">$V320</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <div class="product-box">
+        <img 
+          src="./src/img/Necessaire-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">Nécessaire</h2>
+        <span class="price">$V40</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>      
+      <div class="product-box">
+        <img 
+          src="./src/img/copo-SVLabs-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">Copo SVLabs</h2>
+        <span class="price">$V20</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <div class="product-box">
+        <img 
+          src="./src/img/umidificador-de-ar-600x600.png"  
+          class="product-img"
+        >
+        <h2 class="product-title">Umidificador de Ar</h2>
+        <span class="price">$V130</span>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+    </div>
+  </section>
+  <script src="./src/js/ecommerce.js"></script>
+</body>
+</html>
