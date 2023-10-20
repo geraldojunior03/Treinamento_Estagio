@@ -17,18 +17,18 @@ const form = {
   });
   
   form.btnEntrar.addEventListener('click', (e) => {
-    // e.preventDefault();
+    e.preventDefault();
   
-    // const email = form.email.value;
-    // const senha = form.senha.value;
+    const email = form.email.value;
+    const senha = form.senha.value;
   
-    // if (!email || !senha) {
-    //   alertaErro();
-    //   return;
-    // } else if (email.toLowerCase() !== usuarioValido.email || senha !== usuarioValido.senha) {
-    //   alertaErro();
-    //   return;
-    // }
+    if (!email || !senha) {
+      alertaErro();
+      return;
+    } else if (email.toLowerCase() !== usuarioValido.email || senha !== usuarioValido.senha) {
+      alertaErro();
+      return;
+    }
   
     efetuarLogin();
   });
